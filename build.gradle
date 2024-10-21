@@ -44,10 +44,13 @@ checkstyle {
     toolVersion = '10.2'
 }
 
-run{
-    standardInput = System.in
-}
-
-run {
+tasks.withType(JavaExec) {
     enableAssertions = true
 }
+
+run{
+    standardInput = System.in
+    enableAssertions = true
+}
+
+

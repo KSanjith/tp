@@ -20,7 +20,7 @@ public class YMFC {
      * Main entry-point for the java.ymfc.YMFC application.
      */
     public static void main(String[] args) {
-
+        assert false : "failure testing";
         Ui ui = new Ui(System.in);
         RecipeList recipeList = new RecipeList();
         Storage storage = new Storage(saveFilePath);
